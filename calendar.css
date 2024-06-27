@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    
+}
+
+.calendarInfo{
+    display:flex;
+    align-items: center;
+}
+
+#monthPrev{
+    margin-right: auto;
+    cursor: pointer;
+}
+#monthNext{
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#month, #year{
+    padding: .5em 1em;
+}
+.calendar{
+    width: 80%;
+    max-width: 600px;
+    margin-left: 30%;
+    padding: .5m 0;
+
+}
+
+.calendarWeek, .calendarDate{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+
+} 
+.calendarItem{
+    text-align: center;
+    line-height: 2;
+
+}
